@@ -1,0 +1,36 @@
+/* International Packaging Manufacturing */
+:root{--biru:#0f2a4a;--kraft:#c69c6d;--kraft-muda:#f4ebdf;--hijau:#2e7d5b;--putih:#fff;--teks:#222;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:"Segoe UI",Arial,sans-serif;background:var(--kraft-muda);color:var(--teks);line-height:1.65;}
+header{background:var(--biru);color:var(--putih);position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding:14px 28px;}
+.logo{font-weight:700;font-size:1.15rem;letter-spacing:.5px;}
+.logo span{color:var(--kraft);}
+nav{display:flex;gap:4px;flex-wrap:wrap;}
+nav a{color:var(--putih);text-decoration:none;padding:8px 14px;border-radius:4px;font-size:.95rem;}
+nav a:hover,nav a.aktif{background:var(--kraft);color:var(--biru);}
+.hero{background:linear-gradient(135deg,var(--biru),#1d4673);color:var(--putih);padding:56px 28px;}
+.hero-isi{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;}
+.hero h1{font-size:2.1rem;line-height:1.25;margin-bottom:12px;}
+.hero img{width:100%;border-radius:10px;}
+main{max-width:1000px;margin:0 auto;padding:36px 20px;}
+section{margin-bottom:40px;}
+h2{color:var(--biru);margin-bottom:12px;padding-bottom:6px;border-bottom:3px solid var(--kraft);display:inline-block;}
+h3{color:var(--hijau);margin-bottom:6px;}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;}
+.kartu{background:var(--putih);padding:20px;border-radius:8px;border-top:4px solid var(--kraft);box-shadow:0 2px 6px rgba(0,0,0,.08);}
+.angka{text-align:center;}
+.angka strong{display:block;font-size:2.1rem;color:var(--hijau);}
+.dua-kolom{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center;}
+.dua-kolom img{width:100%;border-radius:10px;}
+ol.langkah{margin-left:22px;}
+ol.langkah li{margin-bottom:8px;}
+.tabel-scroll{overflow-x:auto;}
+table{width:100%;border-collapse:collapse;background:var(--putih);}
+caption{text-align:left;font-weight:600;padding-bottom:8px;color:var(--biru);}
+th{background:var(--biru);color:var(--putih);text-align:left;}
+th,td{padding:11px 14px;border:1px solid #e0d3bf;}
+tbody tr:nth-child(even){background:#faf5ec;}
+.tombol{display:inline-block;margin-top:14px;background:var(--kraft);color:var(--biru);font-weight:600;padding:10px 22px;border-radius:5px;text-decoration:none;}
+.tombol:hover{background:var(--putih);}
+footer{background:var(--biru);color:#b9c6d9;padding:24px 28px;text-align:center;font-size:.88rem;}
+@media(max-width:720px){.hero-isi,.dua-kolom{grid-template-columns:1fr;}.hero h1{font-size:1.6rem;}}
